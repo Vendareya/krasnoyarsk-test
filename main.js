@@ -13,11 +13,20 @@ const map = new Map({
   new TileLayer({
   source: new TileWMS({
   url: 'http://localhost:8080/geoserver/study/wms',
-  params: {'LAYERS': 'study:boudary_city', 'TILED': true},
+  params: {'LAYERS': 'study:test1', 'TILED': true},
   serverType: 'geoserver',
   // Countries have transparency, so do not fade tiles:
   transition: 0,
   }),
+  }),
+  new TileLayer({
+    source: new TileWMS({
+     url: 'http://localhost:8080/geoserver/study/wms',
+     params: {'LAYERS': 'study:boudary_city', 'TILED': true},
+     serverType: 'geoserver',
+     // Countries have transparency, so do not fade tiles:
+     transition: 0,
+    }),
   }),
   ],
   view: new View({
