@@ -1,12 +1,36 @@
 @import "node_modules/ol/ol.css";
 
-html, body {
-  margin: 0;
-  height: 100%;
+html,
+body {
+	margin: 0;
+	height: 100%;
 }
 #map {
-  position: absolute;
+	/* position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.header {
+	display: flex;
+	padding: 12px;
+}
+.map_layer {
+	display: flex;
+	flex-grow: 1;
+}
+
+.map {
+	display: flex;
+	flex-grow: 1;
+}
+.layer {
+	display: flex;
+	padding: 12px;
+	min-width: 200px;
 }
