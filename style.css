@@ -4,6 +4,7 @@ html,
 body {
 	margin: 0;
 	height: 100%;
+	background-color: rgb(255, 255, 255)
 }
 #map {
 	/* position: absolute;
@@ -18,7 +19,13 @@ body {
 }
 .header {
 	display: flex;
+	padding: 18px;
+	background-color: rgb(117, 88, 106)
+}
+.box {
+	display: flex;
 	padding: 12px;
+	background-color: rgb(179, 146, 167)
 }
 .map_layer {
 	display: flex;
