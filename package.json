@@ -1,10 +1,13 @@
+
 {
-  "name": "base-open-layers",
+  "name": "open-layers-app",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
+    "dev": "vite dev",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "deploy.bat"
   },
   "devDependencies": {
     "vite": "^3.0.9"

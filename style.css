@@ -137,7 +137,7 @@ header {
 	transform: translate(-50%, 0%) rotate(-45deg); 
   }
   /*ГОРИЗОНТАЛЬНОЕ МЕНЮ*/
-  ul {
+  .box  ul {
 	list-style: none; /*убираем маркеры списка*/
 	margin: 0; /*убираем отступы*/
 	padding-left: 0; /*убираем отступы*/
@@ -145,7 +145,7 @@ header {
 	background:rgb(181, 165, 174); /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
 	height: 50px; /*задаем высоту*/
   }
-  a {
+  .box a {
 	text-decoration: none; /*убираем подчеркивание текста ссылок*/
 	background: rgb(181, 165, 174); /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
 	color:#fff; /*меняем цвет ссылок*/
@@ -154,14 +154,14 @@ header {
 	line-height:50px; /*ровняем меню по вертикали*/
 	display: block; 
 	border-right: 1px solid  rgb(181, 165, 174); /*добавляем бордюр справа*/
-	-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+	-moz-animation: all 0.3s 0.01s ease; /*делаем плавный переход*/
 	-o-transition: all 0.3s 0.01s ease;
 	-webkit-transition: all 0.3s 0.01s ease;
   }
-  a:hover {
+  .box  a:hover {
 	background: rgb(117, 88, 106);/*добавляем эффект при наведении*/
   }
-  li {
+  .box li {
 	float:left; /*Размещаем список горизонтально для реализации меню*/
   }
   
