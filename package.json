@@ -5,7 +5,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build --base=/krasnoyarsk-test/",
     "serve": "vite preview",
     "deploy": "deploy.bat"
   },

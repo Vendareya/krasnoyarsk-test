@@ -47,8 +47,8 @@ body {
 * {box-sizing: border-box;}
 form {
   position: absolute;
-  top: 6px; left: 1180px;
-  width: 200px;
+  top: 6px; left: 1535px;
+  width: 350px;
   margin: 0;
 }
 input {
@@ -142,18 +142,18 @@ header {
 	margin: 0; /*убираем отступы*/
 	padding-left: 0; /*убираем отступы*/
 	margin-top:0px; /*делаем отступ сверху*/
-	background:rgb(181, 165, 174); /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+	background: rgb(179, 146, 167); /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
 	height: 50px; /*задаем высоту*/
   }
   .box a {
 	text-decoration: none; /*убираем подчеркивание текста ссылок*/
-	background: rgb(181, 165, 174); /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+	background:  rgb(179, 146, 167); /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
 	color:#fff; /*меняем цвет ссылок*/
 	padding:0px 15px; /*добавляем отступ*/
 	font-family: arial; /*меняем шрифт*/
 	line-height:50px; /*ровняем меню по вертикали*/
 	display: block; 
-	border-right: 1px solid  rgb(181, 165, 174); /*добавляем бордюр справа*/
+	border-right: 1px solid  rgb(179, 146, 167); /*добавляем бордюр справа*/
 	-moz-animation: all 0.3s 0.01s ease; /*делаем плавный переход*/
 	-o-transition: all 0.3s 0.01s ease;
 	-webkit-transition: all 0.3s 0.01s ease;
