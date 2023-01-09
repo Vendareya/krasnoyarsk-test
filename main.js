@@ -34,11 +34,6 @@ const map = new Map({
     zoom: 11
   })
 });
-// const layerSwitcher = new ol.control.layerSwitcher({tipLabel: "Layers"});
-// map.addControl(layerSwitcher)
-// layerSwitcher.hidePanel = function () {};
-// layerSwitcher.showPanel();
-// map.getView().fit([])
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
 menuBtn.addEventListener('click', function(){
@@ -69,6 +64,4 @@ tree.onclick = function (event) {
     event.target.classList.add('show');
     event.target.classList.remove('hide');
   }
-
-
 }

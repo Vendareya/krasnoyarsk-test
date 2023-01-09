@@ -48,11 +48,13 @@ body {
 }
 .layer {
 	display: grid;
+	position: absolute;
 	padding: 12px;
 	min-width: 300px;
 	background-color: rgb(233, 213, 225)
-	
+
 }
+
 /*КНОПКА ПОИСКА*/
 * {box-sizing: border-box;}
 form {
@@ -118,15 +120,19 @@ header {
 }
 /* Меню, которое будет появляться */
 .menu {
+	flex-grow: 1;
+    overflow-y: auto;
 	position: absolute;
 	top: 80;
 	left:10;
 	width: 30%;
-	height: 100%;
+	height: 83%;
 	padding: 5px;
   background: rgb(233, 213, 225);
 	transform: translateX(330%);
 	transition: transform 0.5s;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 15px;
 }
 .menu.active {
 	transform: translateX(230%);
@@ -137,6 +143,7 @@ header {
 /* Меняем гамбургер иконку, когда меню открыто */
 .menu-btn.active span:nth-of-type(1) {
 	display: none;
+	position: absolute
   }
   .menu-btn.active span:nth-of-type(2) {
 	top: 50%;
@@ -176,10 +183,45 @@ header {
   .box li {
 	float:left; /*Размещаем список горизонтально для реализации меню*/
   }
+
   /*tree*/
   .hide::before {
+  position: fixed;
   content: '+';
   }
   .show::before {
+	position: fixed;
 	content: "-"
   }
+
+/*Список слоев*/
+ol {
+	counter-reset: li;
+	list-style: none;
+	padding-left: 10px;
+ }
+ .list a {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	margin-bottom: 5px;
+	background:  rgb(179, 146, 167);
+	border-radius: 5px;
+	border: 2px solid  rgb(179, 146, 167);
+	color: rgb(0, 0, 0);
+ }
+ /* .list a:before {
+	counter-increment: li;
+	content: counters(li, ".") ". ";
+	display: inline-block;
+	margin-right: 5px;
+	font-weight: bold;
+ } */
+ .sublist a {
+	background-color: white;
+ }
+ .sublist2 a {
+	background: rgb(233, 213, 225);
+	border: 2px solid  rgb(233, 213, 225);
+ }
