@@ -13,7 +13,7 @@ const map = new Map({
   new TileLayer({
   source: new TileWMS({
   url: 'http://localhost:8080/geoserver/study/wms',
-  params: {'LAYERS': 'study:test1', 'TILED': true},
+  params: {'LAYERS': 'study:test1', 'TILED': true, 'STYLES': 'boundary_administrative'},
   serverType: 'geoserver',
   // Countries have transparency, so do not fade tiles:
   transition: 0,
